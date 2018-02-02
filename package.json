@@ -1,0 +1,31 @@
+{
+  "name": "maps-app",
+  "version": "1.0.0",
+  "description": "Aplicativo de mapas, usando SPA e API REST",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniotex/app-maps-node-js.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "api",
+    "rest",
+    "maps"
+  ],
+  "author": "Antoniotx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniotex/app-maps-node-js/issues"
+  },
+  "homepage": "https://github.com/antoniotex/app-maps-node-js#readme",
+  "dependencies": {
+    "knex": "^0.14.2",
+    "mysql": "^2.15.0",
+    "restify": "^6.3.4"
+  }
+}
