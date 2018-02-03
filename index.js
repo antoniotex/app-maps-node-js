@@ -32,8 +32,10 @@ server.get('/all', function (req, res, next) {
   return next();
 });
 
-server.get("/geocode", function(req, res, next){
-  googleMapsClient.geocode({address: '1600 Amphitheatre Parkway, Mountain View, CA'}).asPromise()
+server.post("/geocode", function(req, res, next){
+  const {lat,lng} = req.body;
+
+  googleMapsClient.reverseGeocode({latlng: [lat, lng]}).asPromise()
   .then((response) => {
     const address = response.json.results[0].formatted_address;
     const place_id = response.json.results[0].place_id;
