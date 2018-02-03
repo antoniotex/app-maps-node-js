@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/antoniotex/app-maps-node-js#readme",
   "dependencies": {
+    "@google/maps": "^0.4.5",
     "knex": "^0.14.2",
     "mysql": "^2.15.0",
     "restify": "^6.3.4"
